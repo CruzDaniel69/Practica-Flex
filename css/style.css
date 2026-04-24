@@ -1,13 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    font-family:Arial, Helvetica, sans-serif;/*fuente de letra*/
 }
 
 nav{
     display: flex; /*Activar Flexbox*/
     justify-content: space-around;/*Alineacion Horizontal*/
     align-items: center;/*Alineacion Vertical*/
-    background-color: #2f3e46;
+    background-color: #2a353b;
 }
 
 nav img{
@@ -15,11 +16,10 @@ nav img{
 }
 
 nav a{
-    font-size: 19px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: 500;
+    font-size: 19px;/*tamaño de la fuente*/
+    text-decoration: none;/*para quitarle la decoracion al <a>*/
+    color: rgb(255, 255, 255);/*color de texto*/
+    font-weight: 500;/*grosor*/
     padding: 15px;
     border-radius: 15px;
     transition: 0.6s;
@@ -28,4 +28,32 @@ nav a{
 nav a:hover{
     background-color: #2a353b;
     scale: 1.1;
+}
+
+.card img{
+    width: 200px;/*ancho*/
+    height: 300px;/*alto*/
+    object-fit: cover;/*para que la imagen no se aplaste*/
+    border-image: fill;
+}
+
+.card h3{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 250px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
 }
